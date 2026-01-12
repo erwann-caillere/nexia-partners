@@ -96,7 +96,7 @@
                         pour planifier votre diagnostic gratuit.
                     </p>
                     
-                    <form id="contactForm" name="contact" method="POST">
+                    <form id="contactForm" action="https://formspree.io/f/xwvvklwz" method="POST">
                         <!-- Champ anti-spam caché -->
                         <p style="display: none;">
                             <label>Ne pas remplir : <input name="bot-field" /></label>
@@ -398,56 +398,5 @@
     </button>
 
     <script src="js/main.js"></script>
-    
-    <!-- Script pour le formulaire avec Netlify Function -->
-    <script>
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-        e.preventDefault(); // Empêche l'envoi classique du formulaire
-        
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        
-        // Change le texte du bouton pendant l'envoi
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
-        
-        // Récupère toutes les données du formulaire
-        const formData = new FormData(this);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
-        
-        try {
-            // Envoie les données à la fonction Netlify
-            const response = await fetch('/.netlify/functions/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                // Succès : redirection vers la page de remerciement
-                window.location.href = 'merci.html';
-            } else {
-                // Erreur
-                alert('Erreur : ' + result.message);
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }
-            
-        } catch (error) {
-            // Erreur réseau ou autre
-            console.error('Erreur:', error);
-            alert('Une erreur est survenue. Veuillez réessayer ou nous contacter directement au +33 7 66 64 19 79');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalText;
-        }
-    });
-    </script>
 </body>
 </html>
