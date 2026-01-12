@@ -1,0 +1,8 @@
+{
+  "name": "nexia-partners",
+  "version": "1.0.0",
+  "description": "Site Nexia Partners - L'IA au service de l'humain",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}

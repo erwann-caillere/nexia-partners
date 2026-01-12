@@ -1,0 +1,21 @@
+# Configuration Netlify pour le projet Nexia Partners
+
+[build]
+  # Dossier de publication (où sont vos fichiers HTML)
+  publish = "."
+  
+  # Commande de build (aucune car site statique)
+  command = ""
+
+[functions]
+  # Dossier contenant les fonctions Netlify
+  directory = "netlify/functions"
+  
+  # Version de Node.js à utiliser
+  node_bundler = "esbuild"
+
+# Règles de redirection (optionnel)
+[[redirects]]
+  from = "/.netlify/functions/send-email"
+  to = "/.netlify/functions/send-email"
+  status = 200
