@@ -7,6 +7,10 @@
   # Commande de build (aucune car site statique)
   command = ""
 
+# Version de Node.js
+[build.environment]
+  NODE_VERSION = "18"
+
 [functions]
   # Dossier contenant les fonctions Netlify
   directory = "netlify/functions"
