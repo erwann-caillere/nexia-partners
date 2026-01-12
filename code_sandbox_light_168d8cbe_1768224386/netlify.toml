@@ -1,10 +1,7 @@
 # Configuration Netlify pour le projet Nexia Partners
 
 [build]
-  # Dossier de publication (où sont vos fichiers HTML)
-  publish = "."
-  
-  # Commande de build (aucune car site statique)
+  # Pas de commande de build
   command = ""
 
 # Version de Node.js
