@@ -1,405 +1,246 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Nexia Partners - Diagnostic IA gratuit 20 min. Consultant IA France Québec. Rendez-vous rapide pour transformer votre entreprise avec l'intelligence artificielle.">
-    <meta name="keywords" content="diagnostic IA gratuit, rendez-vous consultant IA, contact Nexia Partners, IA entreprise">
     <title>Contact & Diagnostic IA Gratuit - Nexia Partners</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <meta name="description" content="Réservez votre diagnostic IA gratuit de 20 minutes avec Nexia Partners. Analyse personnalisée de vos besoins en intelligence artificielle.">
+    <link rel="icon" type="image/png" href="images/logo-nexia-partners.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1D1GX21XC"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z1D1GX21XC');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z1D1GX21XC');
     </script>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo-nexia-partners-horizontal.png" alt="Nexia Partners - L'IA au coeur de votre stratégie" style="height: 60px; width: auto;">
-            </a>
-            
-            <nav class="nav-menu" id="navMenu">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-nexia-partners-horizontal.png" alt="Nexia Partners - IA au service de l'humain" style="height: 50px;">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-dropdown">
                         <a href="offres-ia-entreprise.html" class="nav-link">Nos Offres <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="diagnostic-ia-entreprise.html" class="nav-link">Diagnostic Stratégique IA</a></li>
-                            <li><a href="formation-ia-entreprise.html" class="nav-link">Formation IA & Performance</a></li>
-                            <li><a href="accompagnement-ia-dirigeant.html" class="nav-link">Accompagnement Dirigeant</a></li>
-                            <li><a href="mission-pilote-ia.html" class="nav-link">Mission Pilote IA</a></li>
+                            <li><a href="diagnostic-ia-entreprise.html">Diagnostic Stratégique IA</a></li>
+                            <li><a href="formation-ia-entreprise.html">Formation IA & Performance</a></li>
+                            <li><a href="accompagnement-ia-dirigeant.html">Accompagnement Dirigeant</a></li>
+                            <li><a href="mission-pilote-ia.html">Mission Pilote IA</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="ia-au-service-de-l-humain.html" class="nav-link">IA & Humain</a></li>
-                    <li class="nav-item">
+                    <li><a href="ia-au-service-de-l-humain.html" class="nav-link">IA & Humain</a></li>
+                    <li class="nav-dropdown">
                         <a href="#" class="nav-link">France & Québec <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="formation-ia-france.html" class="nav-link">🇫🇷 France</a></li>
-                            <li><a href="formation-ia-quebec.html" class="nav-link">🇨🇦 Québec</a></li>
+                            <li><a href="formation-ia-france.html">🇫🇷 France</a></li>
+                            <li><a href="formation-ia-quebec.html">🇨🇦 Québec</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="a-propos-nexia-partners.html" class="nav-link">À Propos</a></li>
-                    <li class="nav-item"><a href="blog-ia-entreprise.html" class="nav-link">Blog</a></li>
+                    <li><a href="a-propos-nexia-partners.html" class="nav-link">À Propos</a></li>
+                    <li><a href="blog-ia-entreprise.html" class="nav-link">Blog</a></li>
                 </ul>
-                <div class="header-cta">
-                    <a href="contact-diagnostic-ia.html" class="btn btn-secondary active">
-                        <i class="fas fa-calendar-check"></i> Diagnostic 20 min
-                    </a>
-                </div>
+                
+                <a href="contact-diagnostic-ia.html" class="btn btn-primary">Diagnostic 20 min</a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
-            
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content fade-in-up">
-                <h1>Réservez votre <span class="highlight">Diagnostic IA Gratuit</span></h1>
-                <p>
-                    20 minutes pour identifier les opportunités IA concrètes de votre entreprise. 
-                    Sans engagement, 100% personnalisé, avec un expert qui comprend vos enjeux business.
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 150px 0 100px;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1.5rem;">
+                    Réservez Votre Diagnostic IA Gratuit
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.25rem; color: var(--text-gray); margin-bottom: 2rem;">
+                    <i class="fas fa-clock" style="color: var(--secondary-color);"></i> 20 minutes
+                    <span style="margin: 0 1rem;">|</span>
+                    <i class="fas fa-video" style="color: var(--secondary-color);"></i> Visioconférence
+                    <span style="margin: 0 1rem;">|</span>
+                    <i class="fas fa-gift" style="color: var(--secondary-color);"></i> Sans engagement
                 </p>
             </div>
-            <div class="hero-image fade-in">
-                <i class="fas fa-handshake"></i>
-            </div>
         </div>
     </section>
 
-    <!-- FORMULAIRE DE CONTACT -->
-    <section class="section section-white">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                <!-- Formulaire -->
-                <div class="card" style="padding: 2.5rem;">
-                    <h2 style="color: var(--primary-color); font-size: 1.75rem; margin-bottom: 1rem;">
-                        <i class="fas fa-calendar-check"></i> Prenez Rendez-vous
-                    </h2>
-                    <p style="color: var(--text-gray); margin-bottom: 2rem;">
-                        Remplissez ce formulaire et nous vous contacterons dans les 24h 
-                        pour planifier votre diagnostic gratuit.
-                    </p>
-                    
-                    <form id="contactFormFormspree" action="https://formspree.io/f/xwvvklwz" method="POST">
-                        <!-- Redirection après soumission -->
-                        <input type="hidden" name="_next" value="https://erwann-caillere.github.io/nexia-partners/code_sandbox_light_168d8cbe_1768224386/merci.html">
-                        
-                        <!-- Champ anti-spam caché -->
-                        <p style="display: none;">
-                            <label>Ne pas remplir : <input name="bot-field" /></label>
-                        </p>
-                        
-                        <div class="form-group">
-                            <label for="name" class="form-label">Nom complet *</label>
-                            <input type="text" id="name" name="name" class="form-control" required 
-                                   placeholder="Jean Dupont">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company" class="form-label">Entreprise *</label>
-                            <input type="text" id="company" name="company" class="form-control" required 
-                                   placeholder="Nom de votre entreprise">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="role" class="form-label">Fonction *</label>
-                            <input type="text" id="role" name="role" class="form-control" required 
-                                   placeholder="Directeur Général, DRH, etc.">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email professionnel *</label>
-                            <input type="email" id="email" name="email" class="form-control" required 
-                                   placeholder="jean.dupont@entreprise.com">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone" class="form-label">Téléphone *</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" required 
-                                   placeholder="+33 6 XX XX XX XX ou +1 514 XXX XXXX">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="country" class="form-label">Pays *</label>
-                            <select id="country" name="country" class="form-control" required>
-                                <option value="">Sélectionnez votre pays</option>
-                                <option value="france">🇫🇷 France</option>
-                                <option value="quebec">🇨🇦 Québec / Canada</option>
-                                <option value="autre">🌍 Autre</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="employees" class="form-label">Taille de l'entreprise</label>
-                            <select id="employees" name="employees" class="form-control">
-                                <option value="">Sélectionnez</option>
-                                <option value="1-10">1-10 employés</option>
-                                <option value="11-50">11-50 employés</option>
-                                <option value="51-200">51-200 employés</option>
-                                <option value="201-500">201-500 employés</option>
-                                <option value="500+">500+ employés</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">Votre besoin / projet IA *</label>
-                            <textarea id="message" name="message" class="form-control" required 
-                                      placeholder="Décrivez brièvement vos enjeux et ce que vous souhaitez accomplir avec l'IA..."></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="consent" name="consent" required>
-                                <label for="consent" style="font-weight: 400; color: var(--text-gray);">
-                                    J'accepte d'être contacté par Nexia Partners concernant ma demande *
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                            <i class="fas fa-paper-plane"></i> Envoyer ma Demande
-                        </button>
-                        
-                        <p style="font-size: 0.875rem; color: var(--text-light); text-align: center; margin-top: 1rem;">
-                            * Champs obligatoires
-                        </p>
-                    </form>
-                </div>
-                
-                <!-- Informations de contact -->
-                <div>
-                    <div class="card" style="padding: 2.5rem; margin-bottom: 2rem;">
-                        <h3 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1.5rem;">
-                            <i class="fas fa-info-circle"></i> Ce que Vous Obtenez
-                        </h3>
-                        
-                        <ul style="list-style: none; padding: 0;">
-                            <li style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                                <div style="color: var(--secondary-color); font-size: 1.5rem;">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <div>
-                                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Diagnostic Personnalisé</h4>
-                                    <p style="color: var(--text-gray); margin: 0;">
-                                        Analyse de vos processus actuels et identification des opportunités IA prioritaires.
-                                    </p>
-                                </div>
-                            </li>
-                            
-                            <li style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                                <div style="color: var(--secondary-color); font-size: 1.5rem;">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <div>
-                                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Quick Wins Identifiés</h4>
-                                    <p style="color: var(--text-gray); margin: 0;">
-                                        Des actions concrètes à mettre en œuvre rapidement pour des résultats immédiats.
-                                    </p>
-                                </div>
-                            </li>
-                            
-                            <li style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                                <div style="color: var(--secondary-color); font-size: 1.5rem;">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <div>
-                                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">ROI Estimé</h4>
-                                    <p style="color: var(--text-gray); margin: 0;">
-                                        Estimation du retour sur investissement potentiel de l'IA dans votre contexte.
-                                    </p>
-                                </div>
-                            </li>
-                            
-                            <li style="display: flex; gap: 1rem;">
-                                <div style="color: var(--secondary-color); font-size: 1.5rem;">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <div>
-                                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Recommandations</h4>
-                                    <p style="color: var(--text-gray); margin: 0;">
-                                        Conseils personnalisés sur les prochaines étapes pour votre transformation IA.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card" style="padding: 2.5rem; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));">
-                        <h3 style="color: var(--secondary-color); font-size: 1.5rem; margin-bottom: 1.5rem;">
-                            <i class="fas fa-phone-alt"></i> Nous Contacter
-                        </h3>
-                        
-                        <div style="color: rgba(255,255,255,0.9); line-height: 2;">
-                            <p style="margin-bottom: 1.5rem;">
-                                <strong style="color: #ffffff;">Email :</strong><br>
-                                <a href="mailto:contact@nexia-partners.com" style="color: var(--secondary-color);">
-                                    contact@nexia-partners.com
-                                </a>
-                            </p>
-                            
-                            <p style="margin-bottom: 1.5rem;">
-                                <strong style="color: #ffffff;">Téléphone France :</strong><br>
-                                <a href="tel:+33766641979" style="color: var(--secondary-color);">
-                                    +33 7 66 64 19 79
-                                </a>
-                            </p>
-                            
-                            <p style="margin-bottom: 1.5rem;">
-                                <strong style="color: #ffffff;">Agence France :</strong><br>
-                                <span style="color: rgba(255,255,255,0.9);">Dinan, Bretagne</span>
-                            </p>
-                            
-                            <p style="margin-bottom: 1.5rem;">
-                                <strong style="color: #ffffff;">Agence Canada :</strong><br>
-                                <span style="color: rgba(255,255,255,0.9);">Québec, QC</span>
-                            </p>
-                            
-                            <p>
-                                <strong style="color: #ffffff;">Réseaux Sociaux :</strong><br>
-                                <div class="social-links" style="margin-top: 1rem;">
-                                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
+    <!-- Contact Form Section -->
     <section class="section section-light">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Questions Fréquentes</h2>
-            </div>
-            
-            <div style="max-width: 800px; margin: 0 auto;">
-                <div class="card scroll-animate" style="margin-bottom: 1.5rem; padding: 2rem;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                        <i class="fas fa-question-circle" style="color: var(--secondary-color);"></i>
-                        Le diagnostic est-il vraiment gratuit ?
-                    </h3>
-                    <p style="color: var(--text-gray);">
-                        Oui, absolument ! Le diagnostic de 20 minutes est 100% gratuit et sans engagement. 
-                        C'est l'occasion d'échanger sur vos enjeux et de voir si l'IA peut vous aider.
-                    </p>
-                </div>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
                 
-                <div class="card scroll-animate" style="margin-bottom: 1.5rem; padding: 2rem;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                        <i class="fas fa-question-circle" style="color: var(--secondary-color);"></i>
-                        Sous quel délai serai-je recontacté ?
-                    </h3>
-                    <p style="color: var(--text-gray);">
-                        Nous nous engageons à vous répondre dans les 24h ouvrées maximum. 
-                        Dans la plupart des cas, vous aurez un retour le jour même.
-                    </p>
-                </div>
-                
-                <div class="card scroll-animate" style="margin-bottom: 1.5rem; padding: 2rem;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                        <i class="fas fa-question-circle" style="color: var(--secondary-color);"></i>
-                        Dois-je avoir des connaissances techniques ?
-                    </h3>
-                    <p style="color: var(--text-gray);">
-                        Pas du tout ! Notre approche est orientée business, pas technique. 
-                        Nous parlons votre langue et adaptons notre discours à votre niveau.
-                    </p>
-                </div>
-                
-                <div class="card scroll-animate" style="padding: 2rem;">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                        <i class="fas fa-question-circle" style="color: var(--secondary-color);"></i>
-                        Que se passe-t-il après le diagnostic ?
-                    </h3>
-                    <p style="color: var(--text-gray);">
-                        Vous recevrez un compte-rendu écrit avec nos recommandations. 
-                        Si vous souhaitez aller plus loin, nous vous proposerons un accompagnement adapté. 
-                        Sinon, aucune obligation !
-                    </p>
+                <!-- Formulaire -->
+                <div>
+                    <div class="card" style="padding: 2.5rem;">
+                        <h2 style="color: var(--primary-color); font-size: 1.75rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-check"></i> Prenez Rendez-vous
+                        </h2>
+                        <p style="color: var(--text-gray); margin-bottom: 2rem;">
+                            Remplissez ce formulaire et nous vous contacterons dans les 24h 
+                            pour planifier votre diagnostic gratuit.
+                        </p>
+                        
+                        <!-- FORMULAIRE SANS JAVASCRIPT -->
+                        <form action="https://formspree.io/f/xwvvklwz" method="POST">
+                            <!-- Redirection après soumission -->
+                            <input type="hidden" name="_next" value="https://erwann-caillere.github.io/nexia-partners/code_sandbox_light_168d8cbe_1768224386/merci.html">
+                            
+                            <!-- Champ anti-spam caché -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nom complet *</label>
+                                <input type="text" id="name" name="name" class="form-control" required 
+                                       placeholder="Jean Dupont">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Entreprise *</label>
+                                <input type="text" id="company" name="company" class="form-control" required 
+                                       placeholder="Nom de votre entreprise">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="role" class="form-label">Fonction *</label>
+                                <input type="text" id="role" name="role" class="form-control" required 
+                                       placeholder="Directeur Général, DRH, etc.">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email professionnel *</label>
+                                <input type="email" id="email" name="email" class="form-control" required 
+                                       placeholder="jean.dupont@entreprise.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required 
+                                       placeholder="+33 6 XX XX XX XX ou +1 514 XXX XXXX">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country" class="form-label">Pays *</label>
+                                <select id="country" name="country" class="form-control" required>
+                                    <option value="">Sélectionnez votre pays</option>
+                                    <option value="france">🇫🇷 France</option>
+                                    <option value="canada">🇨🇦 Québec / Canada</option>
+                                    <option value="autre">🌍 Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company_size" class="form-label">Taille de l'entreprise *</label>
+                                <select id="company_size" name="company_size" class="form-control" required>
+                                    <option value="">Sélectionnez la taille</option>
+                                    <option value="1-10">1-10 employés</option>
+                                    <option value="11-50">11-50 employés</option>
+                                    <option value="51-200">51-200 employés</option>
+                                    <option value="201-500">201-500 employés</option>
+                                    <option value="500+">500+ employés</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Votre besoin / projet IA *</label>
+                                <textarea id="message" name="message" class="form-control" required rows="5"
+                                          placeholder="Décrivez brièvement votre besoin ou projet lié à l'IA..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="consent" required>
+                                    <span>J'accepte d'être contacté par Nexia Partners concernant ma demande *</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Envoyer ma Demande
+                            </button>
+                            
+                            <p style="font-size: 0.875rem; color: var(--text-gray); margin-top: 1rem; text-align: center;">
+                                * Champs obligatoires
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="images/logo-nexia-partners.png" alt="Nexia Partners">
-                    </div>
-                    <p>L'intelligence artificielle au service de l'humain. Accompagnement IA pour dirigeants en France et au Québec.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Nos Offres</h3>
-                    <ul>
-                        <li><a href="diagnostic-ia-entreprise.html">Diagnostic Stratégique IA</a></li>
-                        <li><a href="formation-ia-entreprise.html">Formation IA & Performance</a></li>
-                        <li><a href="accompagnement-ia-dirigeant.html">Accompagnement Dirigeant</a></li>
-                        <li><a href="mission-pilote-ia.html">Mission Pilote IA</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Ressources</h3>
-                    <ul>
-                        <li><a href="blog-ia-entreprise.html">Blog IA Entreprise</a></li>
-                        <li><a href="ia-au-service-de-l-humain.html">IA & Humain</a></li>
-                        <li><a href="formation-ia-france.html">Formation IA France</a></li>
-                        <li><a href="formation-ia-quebec.html">Formation IA Québec</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contact@nexia-partners.com</li>
-                        <li><i class="fas fa-phone"></i> France: +33 7 66 64 19 79</li>
-                        <li><i class="fas fa-map-marker-alt"></i> France: Dinan | Canada: Québec</li>
-                        <li><a href="contact-diagnostic-ia.html">Prendre rendez-vous</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Nexia Partners. Tous droits réservés. | <a href="#">Mentions Légales</a> | <a href="#">Politique de Confidentialité</a></p>
-            </div>
+        <div class="container">
+            <p>&copy; 2026 Nexia Partners. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Retour en haut">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- Script pour envoi AJAX et redirection -->
+    <script>
+        // Menu mobile
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if(toggle && menu) {
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+        }
 
-    <script src="js/main.js"></script>
+        // Formulaire avec AJAX et redirection automatique
+        const form = document.querySelector('form');
+        if(form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(form);
+                const button = form.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                
+                // Indication visuelle
+                button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+                button.disabled = true;
+                
+                try {
+                    const response = await fetch('https://formspree.io/f/xwvvklwz', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        // Succès ! Redirection vers votre page merci.html
+                        window.location.href = 'merci.html';
+                    } else {
+                        // Erreur
+                        alert('Une erreur est survenue. Veuillez réessayer.');
+                        button.innerHTML = originalText;
+                        button.disabled = false;
+                    }
+                } catch (error) {
+                    alert('Erreur réseau. Veuillez vérifier votre connexion.');
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                }
+            });
+        }
+    </script>
 </body>
 </html>
