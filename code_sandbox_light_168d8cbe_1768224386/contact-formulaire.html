@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Diagnostic IA Gratuit - Nexia Partners</title>
+    <meta name="description" content="Réservez votre diagnostic IA gratuit de 20 minutes avec Nexia Partners. Analyse personnalisée de vos besoins en intelligence artificielle.">
+    <link rel="icon" type="image/png" href="images/logo-nexia-partners.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1D1GX21XC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z1D1GX21XC');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-nexia-partners-horizontal.png" alt="Nexia Partners - IA au service de l'humain" style="height: 50px;">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-dropdown">
+                        <a href="offres-ia-entreprise.html" class="nav-link">Nos Offres <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="diagnostic-ia-entreprise.html">Diagnostic Stratégique IA</a></li>
+                            <li><a href="formation-ia-entreprise.html">Formation IA & Performance</a></li>
+                            <li><a href="accompagnement-ia-dirigeant.html">Accompagnement Dirigeant</a></li>
+                            <li><a href="mission-pilote-ia.html">Mission Pilote IA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ia-au-service-de-l-humain.html" class="nav-link">IA & Humain</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">France & Québec <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="formation-ia-france.html">🇫🇷 France</a></li>
+                            <li><a href="formation-ia-quebec.html">🇨🇦 Québec</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="a-propos-nexia-partners.html" class="nav-link">À Propos</a></li>
+                    <li><a href="blog-ia-entreprise.html" class="nav-link">Blog</a></li>
+                </ul>
+                
+                <a href="contact-diagnostic-ia.html" class="btn btn-primary">Diagnostic 20 min</a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 150px 0 100px;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1.5rem;">
+                    Réservez Votre Diagnostic IA Gratuit
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.25rem; color: var(--text-gray); margin-bottom: 2rem;">
+                    <i class="fas fa-clock" style="color: var(--secondary-color);"></i> 20 minutes
+                    <span style="margin: 0 1rem;">|</span>
+                    <i class="fas fa-video" style="color: var(--secondary-color);"></i> Visioconférence
+                    <span style="margin: 0 1rem;">|</span>
+                    <i class="fas fa-gift" style="color: var(--secondary-color);"></i> Sans engagement
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Formulaire -->
+                <div>
+                    <div class="card" style="padding: 2.5rem;">
+                        <h2 style="color: var(--primary-color); font-size: 1.75rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-check"></i> Prenez Rendez-vous
+                        </h2>
+                        <p style="color: var(--text-gray); margin-bottom: 2rem;">
+                            Remplissez ce formulaire et nous vous contacterons dans les 24h 
+                            pour planifier votre diagnostic gratuit.
+                        </p>
+                        
+                        <!-- FORMULAIRE SANS JAVASCRIPT -->
+                        <form action="https://formspree.io/f/xwvvklwz" method="POST">
+                            <!-- Champ anti-spam caché -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nom complet *</label>
+                                <input type="text" id="name" name="name" class="form-control" required 
+                                       placeholder="Jean Dupont">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company" class="form-label">Entreprise *</label>
+                                <input type="text" id="company" name="company" class="form-control" required 
+                                       placeholder="Nom de votre entreprise">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="role" class="form-label">Fonction *</label>
+                                <input type="text" id="role" name="role" class="form-control" required 
+                                       placeholder="Directeur Général, DRH, etc.">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email professionnel *</label>
+                                <input type="email" id="email" name="email" class="form-control" required 
+                                       placeholder="jean.dupont@entreprise.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required 
+                                       placeholder="+33 6 XX XX XX XX ou +1 514 XXX XXXX">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="country" class="form-label">Pays *</label>
+                                <select id="country" name="country" class="form-control" required>
+                                    <option value="">Sélectionnez votre pays</option>
+                                    <option value="france">🇫🇷 France</option>
+                                    <option value="canada">🇨🇦 Québec / Canada</option>
+                                    <option value="autre">🌍 Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company_size" class="form-label">Taille de l'entreprise *</label>
+                                <select id="company_size" name="company_size" class="form-control" required>
+                                    <option value="">Sélectionnez la taille</option>
+                                    <option value="1-10">1-10 employés</option>
+                                    <option value="11-50">11-50 employés</option>
+                                    <option value="51-200">51-200 employés</option>
+                                    <option value="201-500">201-500 employés</option>
+                                    <option value="500+">500+ employés</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Votre besoin / projet IA *</label>
+                                <textarea id="message" name="message" class="form-control" required rows="5"
+                                          placeholder="Décrivez brièvement votre besoin ou projet lié à l'IA..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="consent" required>
+                                    <span>J'accepte d'être contacté par Nexia Partners concernant ma demande *</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Envoyer ma Demande
+                            </button>
+                            
+                            <p style="font-size: 0.875rem; color: var(--text-gray); margin-top: 1rem; text-align: center;">
+                                * Champs obligatoires
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nexia Partners. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script simple sans AJAX -->
+    <script>
+        // Menu mobile
+        const toggle = document.getElementById('mobileMenuToggle');
+        const menu = document.getElementById('navMenu');
+        if(toggle && menu) {
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
