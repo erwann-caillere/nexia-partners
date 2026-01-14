@@ -136,15 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
-            
             // Basic validation
             let isValid = true;
             const requiredFields = form.querySelectorAll('[required]');
@@ -166,22 +157,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     isValid = false;
                     emailField.style.borderColor = '#dc3545';
                     showNotification('Veuillez entrer une adresse email valide', 'error');
+                    e.preventDefault();
                     return;
                 }
             }
             
-            if (isValid) {
-                // Show success message
-                showNotification('Merci ! Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.', 'success');
-                
-                // Reset form
-                form.reset();
-                
-                // In production, you would send data to a server here
-                console.log('Form data:', data);
-            } else {
+            if (!isValid) {
+                e.preventDefault();
                 showNotification('Veuillez remplir tous les champs obligatoires', 'error');
             }
+            
+            // Si le formulaire est valide, on le laisse se soumettre normalement à Formspree
+            // Pas de e.preventDefault() ici !
         });
     });
     
